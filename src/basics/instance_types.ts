@@ -10,7 +10,7 @@ let set: Set<number> = new Set([1, 2, 3]);
  * Class
  */
 
-class Queue<T> {
+class QueueEx<T> {
   private data: Array<T> = [];
   push(item: T) {
     this.data.push(item);
@@ -20,4 +20,4 @@ class Queue<T> {
   }
 }
 
-let queue: Queue<number> = new Queue();
+let queue: QueueEx<number> = new QueueEx();
