@@ -24,6 +24,9 @@ const obj = {
 //   readonly age: 30;
 // }
 
+obj.name = "wewe"; //Cannot assign to 'name' because it is a read-only property.
+obj.age = 29;
+
 /**
  * In the above example, x has the type string because it goes through type widening.
  * On the other hand, y has the type "hello" because of the const assertion as const.
