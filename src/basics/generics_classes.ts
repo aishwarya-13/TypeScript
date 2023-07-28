@@ -11,7 +11,7 @@ class Queue<T> {
     return this.data.shift() ?? null;
   }
 }
-const q = new Queue<number>();
+const q = new Queue<number>(); //if you want a queue of numbers we pass in type number
 q.push(123);
-const qs = new Queue<string>();
+const qs = new Queue<string>(); //if you want a queue of strings we pass in type string
 qs.push("Hello");
