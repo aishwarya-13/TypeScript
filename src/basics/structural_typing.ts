@@ -3,28 +3,29 @@
  * It checks for type compatibility
  * That means you can assign user to product and product to user because they have same structure
  */
-type User = { id: string };
-type Product = { id: string };
+type User = {id: string};
+type Product = {id: string};
 
-let user: User = { id: "sdjiwuieuw" };
-let product: Product = { id: "oeqiei9" };
+let user: User = {id: "sdjiwuieuw"};
+let product: Product = {id: "oeqiei9"};
 
 user = product;
 product = user;
 
-type Point2D = { x: number; y: number };
-type Point3D = { x: number; y: number; z: number };
+type Point2D = {x: number; y: number};
+type Point3D = {x: number; y: number; z: number};
 
-let point2d: Point2D = { x: 0, y: 10 };
-let point3d: Point3D = { x: 1, y: 2, z: 3 };
+let point2d: Point2D = {x: 0, y: 10};
+let point3d: Point3D = {x: 1, y: 2, z: 3};
 
-/**Extra info ok
+/**
+ * Extra info ok
  * Point2D has x and y that is also in Point3D. So such assignment is ok
  * Point3D has all the info that is required by 2D so this is ok
  */
 point2d = point3d;
 
-/**Same behavior for function arguments */
+/** Same behavior for function arguments */
 function takesPoint2D(point: Point2D) {
   /** */
 }
