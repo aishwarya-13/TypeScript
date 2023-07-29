@@ -11,4 +11,4 @@ let hello = load();
 
 const trimmed = (hello as string).trim();
 //Or another syntax - this angled bracket syntax does not work in tsx files
-const trimmmmed = (<string>hello).trim();
+const trimmmmed = (<string>hello).trim(); //angle brackets syntax will not work in tsx file bz it interprets as a tag

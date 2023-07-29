@@ -2,7 +2,8 @@
  * Any and unknown are super tyoes in TS
  * This means all types of variables can be assigned to something that is any and same is true for unknown
  *
- * Any is like a escape hatch in type system. It gives you complete freedom to do anything you want with the variable
+ * Any is like a escape hatch in type system. It gives you complete freedom to do anything you want with the
+ * variable
  * It allows you to completely bypass the type system
  * Any variable can be assigned to well-defined type
  *
