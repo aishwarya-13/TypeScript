@@ -1,7 +1,16 @@
+/**
+ * To make sure only 'North' is assigned to variable direction.
+ * To achieve this use literal type
+ * In literal type TS allows you to use any string in a type position
+ */
+
+/**
+ * using string in type position allows only 'North' value to be assigned. Any other value will cause error
+ */
 //let direction: string;
 let direction: "North";
 
-////only value that can be assigned to this variable is this literal variable 'North'
+//only value that can be assigned to this variable is this literal variable 'North'
 direction = "North";
 direction = "n0r7h"; //Type '"n0r7h"' is not assignable to type '"North"'
 
